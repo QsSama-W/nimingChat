@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <h1>登录</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <input type="password" id="password" placeholder="请输入密码" required>
+            </div>
+            <button type="submit" id="login-button">登录</button>
+            <div class="error-message" id="error-message"></div>
+            <div class="info-message" id="info-message"></div>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+</body>
+</html>
